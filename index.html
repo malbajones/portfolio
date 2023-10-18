@@ -7,31 +7,39 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;1,100;1,300;1,500;1,600;1,700;1,800&family=Pathway+Extreme:ital,opsz,wght@1,8..144,500&family=Ysabeau:wght@1;100&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    <header class="siteHeader" id="SiteHeader">
-      <h1 class="siteHeader_title">Maiteth Jones</h1>
-      <p class="siteHeader_label">Front End Developer</p>
-      <nav class="siteHeader_nav">
-        <ul>
-          <li class="1">Home</li>
-          <li class="2">About</li>
-          <li class="3">Projects</li>
-          <li class="4">Contact</li>
-        </ul>
-      </nav>
-    </header>
+    <div class="container">
+      <header class="siteHeader">
+        <h1 class="siteHeader_title">Maiteth Jones</h1>
+        <p class="siteHeader_label">Front End Developer</p>
+        <nav class="container_nav" id="sideMenu">
+          <ul>
+            <li data-content="content_canvas" id="home">Home</li>
+            <li data-content="content_about" id="about">About</li>
+            <li data-content="content_projects" id="projects">Projects</li>
+            <li data-content="content_contact" id="contact">Contact</li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <div id="page">
       <div id="background">
-        <canvas id="canvas1"></canvas>
-        <!-- <div class="mask" id="'mask"> -->
-        <div class="mask_top"></div>
-        <div class="mask_bottom"></div>
+        <section>
+          <div class="ext-content">
+            <canvas id="canvas1"></canvas>
+          </div>
+        </section>
       </div>
+      <!-- <div class="mask" id="'mask"> -->
+      <div class="mask_top"></div>
+      <div class="mask_bottom"></div>
+
       <div class="frame" id="frame">
         <div class="frame_line frame_line-left"></div>
         <div class="frame_line frame_line-right"></div>
@@ -46,10 +54,10 @@
           </div>
         </div>
       </div>
-      <!-- </div> -->
     </div>
 
     <script src="script1.js"></script>
     <script src="script_dark.js"></script>
+    <script src="Jquery.js"></script>
   </body>
 </html>
