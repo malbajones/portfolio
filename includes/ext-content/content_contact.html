@@ -1,3 +1,35 @@
-<div>
-  <h4>contact</h4>
+<div class="article">
+  <div>
+    <h1 class="siteHeader-subtitle">Contact</h1>
+  </div>
+  <div class="form-content">
+    <form onsubmit=" reset(); return false">
+      <input
+        id="name"
+        type="text"
+        name="name"
+        placeholder="NAME"
+        autocomplete="given-name"
+        required
+      />
+      <input
+        id="email"
+        type="text"
+        name="email"
+        placeholder="E-MAIL"
+        autocomplete="off"
+        required
+      />
+      <textarea
+        id="message"
+        type="text"
+        name="message"
+        placeholder="MESSAGE"
+        required
+      ></textarea>
+      <button type="submit" id="btn1-submit" value="GO!">GO</button>
+    </form>
+  </div>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="/script/form_script.js"></script>
 </div>
