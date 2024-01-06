@@ -38,6 +38,9 @@ The Contact page includes a form with a unique design implemented using CSS. Vis
 - jQuery: Used for navigation functionality
 - Google Fonts: Used for custom fonts
 
+
 Feel free to reach out through the contact form for any inquiries or collaborations!
 
 ---
+
+
